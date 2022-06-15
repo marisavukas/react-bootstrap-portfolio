@@ -21,8 +21,16 @@ import {
 function App() {
   const [expanded, setExpanded] = useState(false);
 
+  
 
-
+  const handleToggle = () => {
+    if (expanded) {
+      setExpanded(expanded ? !false : "expanded")
+    } else {
+      setExpanded(false);
+    }
+    setExpanded(!expanded);
+  };
 
   return (
     <div className="App">
@@ -30,8 +38,8 @@ function App() {
         <Navbar bg="dark" variant="dark" expand="lg" expanded={expanded}>
           <Container>
             <Navbar.Brand href="#home">Marisa Vukas</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? !false : "expanded")}/>
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} isRunning={expanded} />
+            <Navbar.Collapse id="basic-navbar-nav" >
               <Nav className="me-auto">
                 <Nav.Link href="#home" onClick={() => setExpanded(false)}>Home</Nav.Link>
                 <Nav.Link href="#about" onClick={() => setExpanded(false)}>About</Nav.Link>
