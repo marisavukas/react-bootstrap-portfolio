@@ -62,32 +62,34 @@ function WebPage() {
               Marisa Vukas
             </h1>
             <p class="mt-1 display-1 fs-2 text-center">Front-End Developer</p>
-            <div className="resume_github_linkedin">
+            <div className="d-flex flex-column justify-content-center">
               <a href={marisavukas_resume} target="_blank" rel="noreferrer">
                 <Button
                   size="lg"
                   variant="outline-secondary bg-dark"
-                  className="h3 mb-5 mr-5"
+                  className="h3 mb-1 mr-5"
                 >
                   View Resume
                 </Button>
               </a>
-              <a
-                className="linkedin_github_icon"
-                href="https://github.com/marisavukas"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiFillGithub className="fs-1 mb-4" />
-              </a>
-              <a
-                className="linkedin_github_icon"
-                href="https://linkedin.com/in/marisa-vukas/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <AiFillLinkedin className="fs-1 mb-4 ml-3" />
-              </a>
+              <div className="d-flex flex-row mx-auto my-0">
+                <a
+                  className="linkedin_github_icon"
+                  href="https://github.com/marisavukas"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <AiFillGithub className="fs-1 mb-4" />
+                </a>
+                <a
+                  className="linkedin_github_icon"
+                  href="https://linkedin.com/in/marisa-vukas/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <AiFillLinkedin className="fs-1 mb-4 ml-3" />
+                </a>
+              </div>
             </div>
           </Container>
         </div>
@@ -116,7 +118,7 @@ function WebPage() {
                         className="contact_button"
                         size="lg"
                         class="btn btn-secondary text-black btn-lg"
-                        variant="outline-secondary bg-dark"
+                        variant="dark"
                         href="#contact"
                       >
                         Contact
@@ -153,7 +155,7 @@ function WebPage() {
                       </Card.Text>
                       <div className="align-self-end justify-content-center mx-auto pt-5">
                         <Button
-                          variant="outline-secondary bg-dark"
+                          variant="dark"
                           href="https://github.com/marisavukas/metronome"
                           target="_blank"
                           rel="noreferrer"
@@ -163,7 +165,7 @@ function WebPage() {
                         </Button>{" "}
                         <Button
                           className="mx-3"
-                          variant="outline-secondary bg-dark"
+                          variant="dark"
                           href="https://metronome-1.herokuapp.com/"
                           target="_blank"
                           rel="noreferrer"
@@ -212,7 +214,7 @@ function WebPage() {
                       </Card.Text>
                       <div className="align-self-end justify-content-center mx-auto pt-5">
                         <Button
-                          variant="outline-secondary bg-dark"
+                          variant="dark"
                           href="https://github.com/marisavukas/metronome.git"
                           target="_blank"
                           rel="noreferrer"
@@ -222,7 +224,7 @@ function WebPage() {
                         </Button>
                         <Button
                           className="mx-3"
-                          variant="outline-secondary bg-dark"
+                          variant="dark"
                           href="https://poblanos.herokuapp.com/"
                           target="_blank"
                           rel="noreferrer"
@@ -307,7 +309,7 @@ function WebPage() {
                           <div className="form-group py-2">
                             <Button
                               type="submit"
-                              variant="outline-secondary bg-dark"
+                              variant="dark"
                               value="Send"
                               onClick={handleShow}
                               className="fs-4 mb-1 mt-2"

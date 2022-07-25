@@ -75,7 +75,7 @@ html {
   .linkedin_github_icon {
 
     color: var(--bs-heading-color);
- 
+  
   }
 
  
@@ -148,20 +148,20 @@ html {
     flex-direction: column;
     justify-content: center;
   }
-
-
   .linkedin_github_icon {
     font-size: 3rem;
    }
 
 
-  .linkedin_github_icon:hover {
-      color: #fff;
-    
-  }
+   .linkedin_github_icon:hover {
+    color: #fff;
+  
+}
   .about, .projects, .contact {
     height: 100vh;
   }
+
+  
   
   
   
@@ -176,7 +176,7 @@ html {
 
 
   @media screen  and (max-width: 1150px) {
-  }
+     }
 
   .pt-5.mt-5 {
     padding:1rem 0rem!important;
@@ -186,7 +186,20 @@ html {
   }
   
   @media screen  and (max-width: 770px) {
-   
+    .linkedin_github_icon {
+
+      color: var(--bs-heading-color);
+      margin-left:1rem;
+      margin-right: 1rem;
+    }
+
+ 
+    .gh_linkedin_icons {
+      /* margin: 0rem 3rem;
+      display:flex;
+      padding: 0rem 2rem!important; */
+    }
+
     .card-body.px-5 {
       padding: 0.2rem !important;
     }
