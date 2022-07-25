@@ -103,8 +103,9 @@ html {
     min-height: 10vh;
     margin-bottom: 0;
     height: 100%;
-    width: 100vw !important;;
-  }
+    margin:0;
+    padding:0;
+  width:auto  }
   
     .pt-5.mt-5.pb-5.mb-5 {
       display: flex;

@@ -1,6 +1,9 @@
+.App-header{
+/* width: auto; */
+}
 @media screen  and (max-width: 400px) {
 
-    .py-4.m-auto{
+    /* .py-4.m-auto{
 
         margin: 0 !important;
         padding: 0!important;
@@ -20,7 +23,7 @@
 
     .fs-2 {
         font-size: 1.2rem!important;
-    }
+    } */
 
 
 }

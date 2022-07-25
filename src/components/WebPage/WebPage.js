@@ -55,7 +55,7 @@ function WebPage() {
 
   return (
     <div className="App">
-      <main className="pb-5">
+      <main>
         <div className="home_page" id="home">
           <Container className="d-flex flex-column justify-content-center align-items-center w-100 mt-auto h-100 flex-wrap">
             <h1 expand="lg" class="font-weight-light display-2 p-2">
@@ -242,7 +242,7 @@ function WebPage() {
         <Container className="h-100">
           <div className="contact" id="contact">
             <div className="w-100 m-auto px-0 pt-5 mt-5">
-              <Row className=" bg-light mx-4 px-0 rounded outline-none text-dark pb-5 mb-5 d-flex justify-content-sm-center justify-content-xs-center justify-content-lg-center justify-content-md-center text-left">
+              <Row className=" bg-light mx-0 px-0 rounded outline-none text-dark pb-5 mb-5 d-flex justify-content-sm-center justify-content-xs-center justify-content-lg-center justify-content-md-center text-left">
                 <Card class="w-100 rounded mx-0 text-dark bg-light ">
                   <div class="card-body w-auto mx-4 text-dark my-1 px-5">
                     <h1 className="pt-5 text-center mx-0 fs-1 w-auto">
@@ -272,7 +272,7 @@ function WebPage() {
                           onSubmit={sendEmail}
                           isSubmitted={true}
                           variant="light"
-                          className="rounded"
+                          className="rounded p-0"
                         >
                           <div className="form-group">
                             <label className="mb-1 fs-4 mx-0 ">Name</label>
