@@ -113,7 +113,6 @@ html {
   
     .projects {
       padding-top: 3rem;
-
   
     }
   
@@ -159,6 +158,9 @@ html {
       color: #fff;
     
   }
+  .about, .projects, .contact {
+    height: 100vh;
+  }
   
   
   
@@ -170,35 +172,38 @@ html {
   
   
   @media screen  and (min-width: 1150px) {
-  .about, .projects, .contact {
-    height: 100vh;
+
+
+  @media screen  and (max-width: 1150px) {
   }
 
-  Row {
-    max-width: 90%;
-  }
+  .pt-5.mt-5 {
+    padding:1rem 0rem!important;
+
+   }
  
   }
   
   @media screen  and (max-width: 770px) {
    
     .card-body.px-5 {
-      /* padding: 0.2rem !important; */
+      padding: 0.2rem !important;
     }
+    /* .pt-5.mt-5 {
+      padding:1rem 0rem!important;
+  
+     } */
     
   }
     
 
 
   @media screen  and (max-width: 400px) {
-   .pt-5.mt-5 {
-    /* padding:1rem 0rem!important; */
-
-   }
+  
   
    
  .pt-5 {
-  /* padding:1rem!important; */
+  padding:.5rem!important;
  }
  .mt-5 {
   margin-top:1rem!important;
@@ -213,16 +218,17 @@ html {
   }
 
   .py-5  {
-    /* padding: 0.2rem!important; */
+    padding: 0.2rem!important;
 
   }
   .card-body {
-    /* padding: 0 !important; */
+    margin-bottom: 0 !important;
   }
+
+  
 
   .pt-3.text-dark.mb-1 {
     padding-top: 1rem !important;
-
 
   }
 

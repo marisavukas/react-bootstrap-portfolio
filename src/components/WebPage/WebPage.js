@@ -132,33 +132,26 @@ function WebPage() {
         <Container className="h-100">
           <div className="projects" id="projects">
             <div className="card-body pt-5 mt-5 pb-5 mb-5 d-flex text-center px-5">
-              <Row className="bg-light rounded outline-none text-dark pt-5 mt-2 pb-5 mb-5 row mb-5 d-flex px-5 justify-content-lg-between text-center">
-                <h1 className="pt-0 px-5 text-dark mb-4">Projects</h1>
+              <Row className="bg-white rounded outline-none text-dark pt-5 mt-2 pb-5 mb-5 row mb-5 d-flex px-5 justify-content-lg-between text-center">
+                <h1 className="pt-0  pb-3 px-5 text-dark mb-0">Projects</h1>
                 <Col
                   xs={12}
                   sm={12}
                   md={12}
                   lg={5}
                   xl={5}
-                  className="mt-1 px-0 mb-1 d-flex shadow-lg"
+                  className="mt-1 px-0 mb-1 d-flex shadow-sm"
                 >
-                  <Card className="h-100 py-5">
-                    <a
-                      href="https://metronome-1.herokuapp.com/"
-                      target="_blank"
-                      className=" d-none w-50 h-50 m-auto py-3 d-flex justify-content-center"
-                    >
-                      {/* <Card.Img variant="top" src={metronome_picture} /> */}
-                    </a>
-                    <Card.Body>
-                      <Card.Title className="d-flex justify-content-center fs-2">
-                        Online Metronome App
+                  <Card className="h-100 mb-5">
+                    <Card.Body className="d-flex flex-column card-body">
+                      <Card.Title className="align-self-start fs-2 pb-2 align-items-center mx-auto">
+                        Metronome App
                       </Card.Title>
-                      <Card.Text className="d-flex justify-content flex-start p-4 py-3 my-5 px-3  fs-4">
+                      <Card.Text className="align-self-center justify-content-center fs-4 mb-auto pb-5">
                         A fully responsive metronome app made from scratch using
                         React and Node.js.
                       </Card.Text>
-                      <div className="d-flex m-auto justify-content-center">
+                      <div className="align-self-end justify-content-center mx-auto pt-5">
                         <Button
                           variant="outline-secondary bg-dark"
                           href="https://github.com/marisavukas/metronome"
@@ -196,9 +189,9 @@ function WebPage() {
                   md={12}
                   lg={5}
                   xl={5}
-                  className="mt-1 px-0 mb-1 d-flex justify-content-center shadow-lg"
+                  className="mt-1 px-0 mb-1 d-flex justify-content-center shadow-sm"
                 >
-                  <Card className="h-100 py-5">
+                  <Card className="h-100">
                     <a
                       href="https://poblanos.herokuapp.com/"
                       target="_blank"
@@ -209,15 +202,15 @@ function WebPage() {
                       src={poblanos_picture}
                     /> */}
                     </a>
-                    <Card.Body>
-                      <Card.Title className="d-flex justify-content-center fs-2">
+                    <Card.Body className="d-flex flex-column card-body ">
+                      <Card.Title className="align-self-start fs-2 pb-2 align-items-center mx-auto">
                         Poblano's Grill App
                       </Card.Title>
-                      <Card.Text className="d-flex justify-content flex-start p-4 fs-4 my-5 py-3 px-3">
+                      <Card.Text className="align-self-center justify-content-center fs-4 mb-auto pb-5 card-text">
                         A fully responsive restaurant app made without a
                         template using React and Node.js.
                       </Card.Text>
-                      <div className="d-flex m-auto justify-content-center ">
+                      <div className="align-self-end justify-content-center mx-auto pt-5">
                         <Button
                           variant="outline-secondary bg-dark"
                           href="https://github.com/marisavukas/metronome.git"
@@ -251,7 +244,7 @@ function WebPage() {
             <div className="w-100 m-auto px-0 pt-5 mt-5">
               <Row className=" bg-light mx-4 px-0 rounded outline-none text-dark pb-5 mb-5 d-flex justify-content-sm-center justify-content-xs-center justify-content-lg-center justify-content-md-center text-left">
                 <Card class="w-100 rounded mx-0 text-dark bg-light ">
-                  <div class="card-body w-auto mx-4 text-dark my-1 px-2">
+                  <div class="card-body w-auto mx-4 text-dark my-1 px-5">
                     <h1 className="pt-5 text-center mx-0 fs-1 w-auto">
                       <strong>Contact</strong>
                     </h1>
@@ -307,7 +300,7 @@ function WebPage() {
                               name="message"
                               rows="6"
                               variant="light"
-                              className="form-control mb-4bg-white text-dark fs-5"
+                              className="form-control bg-white text-dark fs-5"
                               placeholder="Type your message..."
                             />
                           </div>
