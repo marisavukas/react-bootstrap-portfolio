@@ -211,7 +211,7 @@ function WebPage() {
                       <div className="align-self-end justify-content-center mx-auto pt-5">
                         <Button
                           variant="dark"
-                          href="https://github.com/marisavukas/metronome.git"
+                          href="https://github.com/marisavukas/poblanos"
                           target="_blank"
                           rel="noreferrer"
                         >
