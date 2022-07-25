@@ -64,11 +64,7 @@ function WebPage() {
             <p class="mt-1 display-1 fs-2 text-center">Front-End Developer</p>
             <div className="d-flex flex-column justify-content-center">
               <a href={marisavukas_resume} target="_blank" rel="noreferrer">
-                <Button
-                  size="lg"
-                  variant="outline-secondary bg-dark"
-                  className="h3 mb-1 mr-5"
-                >
+                <Button size="lg" variant="dark" className="h3 mb-1 mr-5">
                   View Resume
                 </Button>
               </a>
