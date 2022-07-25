@@ -1,0 +1,196 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .App-header {
+  position: fixed;
+  z-index: 100;
+  margin-top:0;
+  width: 100%;
+  padding-top: 0;
+  
+  }
+
+  /* .App {
+    background-color: #3c243f;
+  } */
+  .mt-4 {
+    font-size: 1.5rem;
+  }
+  .about_container{
+    height: 100vh;
+  }
+
+
+  .home_container{
+    height: 100vh;
+  }
+
+  .project_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+  }
+ .contact_container {
+  height: 100vh;
+}
+
+  .about {
+    padding-top: 3rem;
+
+
+
+  }
+
+/* 
+.pt-5 {
+    text-align: center;
+  } */
+
+
+  .contact {
+    padding-top: 3rem;
+
+      margin-top: 3rem;
+
+  
+    
+  }
+
+
+
+
+  .contact_container{
+    height: 100vh;
+    /* margin-bottom: 5rem; */
+
+  }
+
+
+  .fs-1 .mb-5 {
+    color: var(--bs-heading-color);
+  }
+
+  .linkedin_github_icon {
+
+    color: var(--bs-heading-color);
+ 
+  }
+
+ 
+  
+  .text-center {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+  
+  
+  .container-fluid {
+    width:100%;
+  }
+  
+  .App{
+    /* height:100%; */
+    background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg");
+
+    background-repeat: repeat;
+    background-size: cover;
+    background-color: rgba(108, 90, 116, 0.962);
+    background-position: center center;
+    background-blend-mode:luminosity;
+    min-height: 10vh;
+    margin-bottom: 0;
+    height: 100%;
+    width:auto;
+  }
+  
+    .pt-5.mt-5.pb-5.mb-5 {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .projects {
+      padding-top: 3rem;
+      margin-top: 3rem;
+
+  
+    }
+  
+
+  /* .btn.btn-secondary.btn-lg {
+    display: inline-block;
+    justify-content: center;
+  } */
+  
+  .project-container, .contact_container {
+    height: 100vh;
+  }
+  
+  #basic-navbar-nav {
+    font-size: 1.3rem;
+  }
+  
+
+  
+  
+  .homepage_container{
+    display: flex;
+    padding-top: 20vh;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .col-sm-5 {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  .linkedin_github_icon {
+    font-size: 3rem;
+   }
+
+
+  .linkedin_github_icon:hover {
+      color: #fff;
+    
+  }
+  
+  
+  
+  
+  @media screen  and (max-width: 2000px) {
+  
+    
+  }
+  
+  
+  @media screen  and (max-width: 1150px) {
+  
+  }
+  
+  @media screen  and (max-width: 770px) {
+   
+    .card-body.px-5 {
+      padding: 0.2rem !important;
+    }
+    
+  }
+    
+
+
+  @media screen  and (max-width: 400px) {
+   
+ 
+
+    
+  .px-5  {
+    padding: 0.2rem !important;
+
+  }
+}

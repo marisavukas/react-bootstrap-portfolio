@@ -27,17 +27,24 @@ padding-top: 0;
 
 .home_page {
   height:100%;
+  /* width: 100vw!important; */
   background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg");
   background-repeat: no-repeat;
+  filter: blur(0px);
   background-size: cover;
-  background-color: rgb(153, 152, 176);
+  /* background-color: rgb(153, 152, 176); */
+  background-color:rgba(108, 90, 116, 0.962);
+
   background-position: center center;
   background-blend-mode:luminosity;
   min-height: 10vh;
-  margin-bottom: 0;
+
   height: 100vh;
-  width:auto;
+  width:100vw;
 }
+
+
+
 
   .pt-5.mt-5.pb-5.mb-5 {
     display: flex;
@@ -57,16 +64,34 @@ footer {
   justify-content: center;
 } */
 
-.project-container, .contact_container {
-  height: 100vh;
+
+
+#basic-navbar-nav {
+  font-size: 1.3rem;
 }
 
 
 
-.App {
 
 
+.homepage_container{
+  display: flex;
+  padding-top: 20vh;
+  flex-direction: column; 
+  justify-content: center;
+  text-align: center;
 }
+
+.col-sm-5 {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
 
 @media screen  and (max-width: 2000px) {
 
@@ -79,9 +104,9 @@ footer {
 }
 
 @media screen  and (max-width: 770px) {
-  .mt-5 {
+  /* .mt-5 {
     margin-top: (spacer * .25);
-  }
+  } */
 
   
 }
