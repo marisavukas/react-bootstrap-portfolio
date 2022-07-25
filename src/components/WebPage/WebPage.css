@@ -199,6 +199,12 @@ html {
     padding: 1rem .5rem!important;
 
   }
+  
+  .mt-5 {
+    margin-top:1rem!important;
+  
+   }
+  
     
 
 
@@ -207,7 +213,9 @@ html {
   
    
  .pt-5 {
-  padding:.5rem!important;
+  padding-top:.5rem!important;
+  padding-bottom:.5rem!important;
+
  }
  .mt-5 {
   margin-top:1rem!important;
@@ -217,7 +225,8 @@ html {
 
     
   .px-5  {
-    padding: 1rem !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
 
   }
 
