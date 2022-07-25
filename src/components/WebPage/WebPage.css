@@ -103,7 +103,7 @@ html {
     min-height: 10vh;
     margin-bottom: 0;
     height: 100%;
-    width:auto;
+    width: 100vw !important;;
   }
   
     .pt-5.mt-5.pb-5.mb-5 {
@@ -113,7 +113,6 @@ html {
   
     .projects {
       padding-top: 3rem;
-      margin-top: 3rem;
 
   
     }
@@ -125,7 +124,7 @@ html {
   } */
   
   .project-container, .contact_container {
-    height: 100vh;
+    /* height: 100vh; */
   }
   
   #basic-navbar-nav {
@@ -170,14 +169,21 @@ html {
   }
   
   
-  @media screen  and (max-width: 1150px) {
-  
+  @media screen  and (min-width: 1150px) {
+  .about, .projects, .contact {
+    height: 100vh;
+  }
+
+  Row {
+    max-width: 90%;
+  }
+ 
   }
   
   @media screen  and (max-width: 770px) {
    
     .card-body.px-5 {
-      padding: 0.2rem !important;
+      /* padding: 0.2rem !important; */
     }
     
   }
@@ -185,12 +191,47 @@ html {
 
 
   @media screen  and (max-width: 400px) {
+   .pt-5.mt-5 {
+    /* padding:1rem 0rem!important; */
+
+   }
+  
    
- 
+ .pt-5 {
+  /* padding:1rem!important; */
+ }
+ .mt-5 {
+  margin-top:1rem!important;
+
+ }
+
 
     
   .px-5  {
-    padding: 0.2rem !important;
+    padding: 1rem !important;
 
+  }
+
+  .py-5  {
+    /* padding: 0.2rem!important; */
+
+  }
+  .card-body {
+    /* padding: 0 !important; */
+  }
+
+  .pt-3.text-dark.mb-1 {
+    padding-top: 1rem !important;
+
+
+  }
+
+ 
+.fs-5 {
+  font-size: 1rem!important;
+}
+  .pt-3.px-5.text-dark.mb-4 {
+    padding-top:.5rem!important;
+    margin-bottom: 1rem!important;
   }
 }

@@ -32,15 +32,17 @@ const NavigationBar = () => {
         outline="light"
         expand="lg"
         expanded={expanded}
+        className="py-4 m-auto"
       >
-        <Container className=" d-flex flex-row justify-content-start align-items-start w-100 mt-auto px-5 mx-0 h-100">
+        <Container className=" d-flex flex-row justify-content-start align-items-start w-100 p-0 px-5 mx-0 h-100">
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
+            className="p-0 m-0"
             onClick={handleToggle}
             isRunning={expanded}
           />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mt-3 mb-3">
+            <Nav>
               <Nav.Link href="#home" onClick={() => setExpanded(false)}>
                 Home
               </Nav.Link>

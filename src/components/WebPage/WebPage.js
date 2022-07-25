@@ -94,11 +94,11 @@ function WebPage() {
 
         <Container className="h-100">
           <div className="about" id="about">
-            <Row className="pt-5 mt-5 pb-5 mb-5 d-flex text-center">
+            <Row className="pt-5 mt-5 pb-5 mb-5 d-flex text-center px-5">
               <Card class="text-dark bg-light ">
-                <div className="card-body px-5">
+                <div className="card-body">
                   <h1 className="pt-3 text-dark mb-1">About</h1>
-                  <Col className="pt-1 mt-5 pb-3 mb-1">
+                  <Col className="pt-1 mt-5 pb-3 mb-1 px-2 ">
                     <Row className="pt-5 mt-2 pb-5 mb-5">
                       <div className="text-center outline-none text-dark my-1 py-2 fs-3 line-height-2">
                         {" "}
@@ -131,9 +131,9 @@ function WebPage() {
 
         <Container className="h-100">
           <div className="projects" id="projects">
-            <div className="card-body pt-5 mt-5 px-2">
-              <Row className="bg-light rounded outline-none text-dark pb-5 mb-5 d-flex px-5 mx-auto justify-content-lg-between text-center">
-                <h1 className="pt-3 px-5 text-dark mb-4">Projects</h1>
+            <div className="card-body pt-5 mt-5 pb-5 mb-5 d-flex text-center px-5">
+              <Row className="bg-light rounded outline-none text-dark pt-5 mt-2 pb-5 mb-5 row mb-5 d-flex px-5 justify-content-lg-between text-center">
+                <h1 className="pt-0 px-5 text-dark mb-4">Projects</h1>
                 <Col
                   xs={12}
                   sm={12}
@@ -154,7 +154,7 @@ function WebPage() {
                       <Card.Title className="d-flex justify-content-center fs-2">
                         Online Metronome App
                       </Card.Title>
-                      <Card.Text className="d-flex justify-content flex-start p-4 py-5 my-5 px-3  fs-4">
+                      <Card.Text className="d-flex justify-content flex-start p-4 py-3 my-5 px-3  fs-4">
                         A fully responsive metronome app made from scratch using
                         React and Node.js.
                       </Card.Text>
@@ -213,7 +213,7 @@ function WebPage() {
                       <Card.Title className="d-flex justify-content-center fs-2">
                         Poblano's Grill App
                       </Card.Title>
-                      <Card.Text className="d-flex justify-content flex-start p-4 fs-4 my-5 py-5 px-3">
+                      <Card.Text className="d-flex justify-content flex-start p-4 fs-4 my-5 py-3 px-3">
                         A fully responsive restaurant app made without a
                         template using React and Node.js.
                       </Card.Text>
@@ -248,15 +248,15 @@ function WebPage() {
 
         <Container className="h-100">
           <div className="contact" id="contact">
-            <section className=" pt-5 mt-5">
-              <Row className=" w-100 bg-light rounded outline-none text-dark pb-5 mb-5 d-flex mx-auto justify-content-md-lg-between justify-content-md-between text-left">
-                <div>
-                  <div class="text-dark my-3">
-                    <h1 className="pt-3 text-center fs-1 ">
+            <div className="w-100 m-auto px-0 pt-5 mt-5">
+              <Row className=" bg-light mx-4 px-0 rounded outline-none text-dark pb-5 mb-5 d-flex justify-content-sm-center justify-content-xs-center justify-content-lg-center justify-content-md-center text-left">
+                <Card class="w-100 rounded mx-0 text-dark bg-light ">
+                  <div class="card-body w-auto mx-4 text-dark my-1 px-2">
+                    <h1 className="pt-5 text-center mx-0 fs-1 w-auto">
                       <strong>Contact</strong>
                     </h1>
-                    <div className="rounded outline-none">
-                      <div className="row px-5">
+                    <div className="px-0 outline-none w-auto m-auto">
+                      <div className="row px-0">
                         <div className="text-center">
                           {show && (
                             <Alert
@@ -266,7 +266,7 @@ function WebPage() {
                               onClick={handleClose}
                               aria-label="Close"
                             >
-                              <Alert.Heading variant="w-100 h5 m-auto text-center">
+                              <Alert.Heading variant="w-100 h5 mx-0 m-auto text-center">
                                 Your message has been sent
                                 {/* <MdCancel className="dark w-auto ml-4 px-4" /> */}
                               </Alert.Heading>
@@ -282,7 +282,7 @@ function WebPage() {
                           className="rounded"
                         >
                           <div className="form-group">
-                            <label className="mb-1 fs-4">Name</label>
+                            <label className="mb-1 fs-4 mx-0 ">Name</label>
                             <input
                               name="name"
                               type="text"
@@ -297,7 +297,7 @@ function WebPage() {
                               name="email"
                               type="text"
                               variant="light"
-                              className="form-control mb-4 bg-light text-dark fs-5"
+                              className="form-control mb-4 bg-white text-dark fs-5"
                               placeholder="Enter a valid email address"
                             />
                           </div>
@@ -307,7 +307,7 @@ function WebPage() {
                               name="message"
                               rows="6"
                               variant="light"
-                              className="form-control mb-4 bg-light text-dark fs-5"
+                              className="form-control mb-4bg-white text-dark fs-5"
                               placeholder="Type your message..."
                             />
                           </div>
@@ -317,7 +317,7 @@ function WebPage() {
                               variant="outline-secondary bg-dark"
                               value="Send"
                               onClick={handleShow}
-                              className="fs-4 mb-1"
+                              className="fs-4 mb-1 mt-2"
                             >
                               Send Message
                             </Button>
@@ -325,13 +325,13 @@ function WebPage() {
                             <div></div>
                           </div>
                         </form>
-                        <div className="column md"></div>
+                        {/* <div className="column md"></div> */}
                       </div>
                     </div>
                   </div>
-                </div>
+                </Card>
               </Row>
-            </section>
+            </div>
           </div>
         </Container>
       </main>
