@@ -195,6 +195,10 @@ html {
      } */
     
   }
+  .pt-5, .pb-5  {
+    padding: 1rem .5rem!important;
+
+  }
     
 
 
