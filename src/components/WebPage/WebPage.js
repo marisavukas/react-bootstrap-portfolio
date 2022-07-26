@@ -90,13 +90,13 @@ function WebPage() {
           </Container>
         </div>
 
-        <Container className="h-100">
+        <Container className="container">
           <div className="about" id="about">
             <Row className="pt-5 mt-5 pb-5 mb-5 d-flex text-center px-5">
               <Card class="text-dark bg-light ">
                 <div className="card-body">
                   <h1 className="pt-3 text-dark mb-1">About</h1>
-                  <Col className="pt-1 mt-5 pb-3 mb-1 px-2 ">
+                  <Col className="pt-1 mt-5 pb-1 mb-1 px-2 ">
                     <Row className="pt-5 mt-2 pb-5 mb-5">
                       <div className="text-center outline-none text-dark my-1 py-2 fs-3 line-height-2">
                         {" "}
@@ -127,7 +127,7 @@ function WebPage() {
           </div>
         </Container>
 
-        <Container className="h-100">
+        <Container className="container">
           <div className="projects" id="projects">
             <div className="card-body pt-5 mt-5 pb-5 mb-5 d-flex text-center px-5">
               <Row className="bg-white rounded outline-none text-dark pt-5 mt-2 pb-5 mb-5 row mb-5 d-flex px-5 justify-content-lg-between text-center">
@@ -145,7 +145,7 @@ function WebPage() {
                       <Card.Title className="align-self-start fs-2 pb-2 align-items-center mx-auto">
                         Metronome App
                       </Card.Title>
-                      <Card.Text className="align-self-center justify-content-center fs-4 mb-auto pb-5">
+                      <Card.Text className="align-self-center justify-content-center fs-4 mb-auto pb-5 card-text">
                         A fully responsive metronome app made from scratch using
                         React and Node.js.
                       </Card.Text>
@@ -200,7 +200,7 @@ function WebPage() {
                       src={poblanos_picture}
                     /> */}
                     </a>
-                    <Card.Body className="d-flex flex-column card-body ">
+                    <Card.Body className="d-flex flex-column card-body">
                       <Card.Title className="align-self-start fs-2 pb-2 align-items-center mx-auto">
                         Poblano's Grill App
                       </Card.Title>
@@ -237,7 +237,7 @@ function WebPage() {
           </div>
         </Container>
 
-        <Container className="h-100">
+        <Container className="container">
           <div className="contact" id="contact">
             <div className="w-100 m-auto px-0 pt-5 mt-5">
               <Row className=" bg-light mx-0 px-0 rounded outline-none text-dark pb-5 mb-5 d-flex justify-content-sm-center justify-content-xs-center justify-content-lg-center justify-content-md-center text-left">
@@ -326,8 +326,8 @@ function WebPage() {
           </div>
         </Container>
       </main>
-      <footer class="py-5 my-0 px-4 bg-dark">
-        <Container>
+      <footer class="py-1  px-4 mt-5 bg-dark">
+        <Container className="footer">
           <p class="text-center text-light">
             Copyright &copy; Marisa Vukas 2022
           </p>

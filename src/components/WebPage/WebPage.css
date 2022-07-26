@@ -1,270 +1,270 @@
 html {
-    scroll-behavior: smooth;
-  }
-  
-  .App-header {
-  position: fixed;
-  z-index: 100;
-  margin-top:0;
-  width: 100%;
-  padding-top: 0;
-  
-  }
+  scroll-behavior: smooth;
+}
 
-  /* .App {
-    background-color: #3c243f;
-  } */
-  .mt-4 {
-    font-size: 1.5rem;
-  }
-  .about_container{
-    height: 100vh;
-  }
+.App-header {
+position: fixed;
+z-index: 100;
+margin-top:0;
+width: 100%;
+padding-top: 0;
 
+}
 
-  .home_container{
-    height: 100vh;
-  }
-
-  .project_container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-
-  }
- .contact_container {
+/* .App {
+  background-color: #3c243f;
+} */
+.mt-4 {
+  font-size: 1.5rem;
+}
+.Container{
   height: 100vh;
 }
 
-  .about {
-    padding-top: 3rem;
+
+/* .container{
+  height: 100vh;
+} */
+
+.project_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+}
+.contact_container {
+height: 100vh;
+}
+
+.about {
+  padding-top: 3rem;
 
 
 
-  }
+}
 
 /* 
 .pt-5 {
-    text-align: center;
-  } */
+  text-align: center;
+} */
 
 
-  .contact {
-    padding-top: 3rem;
+.contact {
+  padding-top: 3rem;
 
-      margin-top: 3rem;
-
-  
-    
-  }
+    margin-top: 3rem;
 
 
-
-
-  .contact_container{
-    height: 100vh;
-    /* margin-bottom: 5rem; */
-
-  }
-
-
-  .fs-1 .mb-5 {
-    color: var(--bs-heading-color);
-  }
-
-  .linkedin_github_icon {
-
-    color: var(--bs-heading-color);
-  
-  }
-
- 
-  
-  .text-center {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 2rem;
-  }
-  
-  
-  .container-fluid {
-    width:100%;
-  }
-  
-  .App{
-    /* height:100%; */
-    background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg");
-
-    background-repeat: repeat;
-    background-size: cover;
-    background-color: rgba(108, 90, 116, 0.962);
-    background-position: center center;
-    background-blend-mode:luminosity;
-    min-height: 10vh;
-    margin-bottom: 0;
-    height: 100%;
-    margin:0;
-    padding:0;
-  width:auto  }
-  
-    .pt-5.mt-5.pb-5.mb-5 {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .projects {
-      padding-top: 3rem;
-  
-    }
-  
-
-  /* .btn.btn-secondary.btn-lg {
-    display: inline-block;
-    justify-content: center;
-  } */
-  
-  .project-container, .contact_container {
-    /* height: 100vh; */
-  }
-  
-  #basic-navbar-nav {
-    font-size: 1.3rem;
-  }
-  
-
-  
-  
-  .homepage_container{
-    display: flex;
-    padding-top: 20vh;
-    flex-direction: column; 
-    justify-content: center;
-    text-align: center;
-  }
-  
-  .col-sm-5 {
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .linkedin_github_icon {
-    font-size: 3rem;
-   }
-
-
-   .linkedin_github_icon:hover {
-    color: #fff;
   
 }
-  .about, .projects, .contact {
-    height: 100vh;
+
+
+
+
+.contact_container{
+  height: 100vh;
+  /* margin-bottom: 5rem; */
+
+}
+
+
+.fs-1 .mb-5 {
+  color: var(--bs-heading-color);
+}
+
+.linkedin_github_icon {
+
+  color: var(--bs-heading-color);
+
+}
+
+
+
+.text-center {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+
+.container-fluid {
+  width:100%;
+}
+
+
+.App{
+  /* height:100%; */
+  background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg");
+
+  background-repeat: repeat;
+  background-size: cover;
+  background-color: rgba(108, 90, 116, 0.962);
+  background-position: center center;
+  background-blend-mode:luminosity;
+  min-height: 10vh;
+  margin-bottom: 0;
+  height: auto;
+  margin:0;
+  padding:0;
+width:auto  }
+
+  .pt-5.mt-5.pb-5.mb-5 {
+    display: flex;
+    justify-content: center;
   }
 
-  
-  
-  
-  
-  
-  @media screen  and (max-width: 2000px) {
-  
-    
+  .projects {
+    padding-top: 3rem;
+
   }
-  
-  
-  @media screen  and (min-width: 1150px) {
 
 
-  @media screen  and (max-width: 1150px) {
-     }
+/* .btn.btn-secondary.btn-lg {
+  display: inline-block;
+  justify-content: center;
+} */
 
-  .pt-5.mt-5 {
-    padding:1rem 0rem!important;
 
-   }
+
+#basic-navbar-nav {
+  font-size: 1.3rem;
+}
+
+
+
+
+.homepage_container{
+  display: flex;
+  padding-top: 20vh;
+  flex-direction: column; 
+  justify-content: center;
+  text-align: center;
+}
+
+.col-sm-5 {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.linkedin_github_icon {
+  font-size: 3rem;
+ }
+
+
+ .linkedin_github_icon:hover {
+  color: #fff;
+
+}
+
+
+
+.about, .projects, .contact {
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+@media screen  and (min-width: 1150px) {
+
+}
+
+@media screen  and (max-width: 1150px) {
  
-  }
-  
-  @media screen  and (max-width: 770px) {
-    .linkedin_github_icon {
 
-      color: var(--bs-heading-color);
-      margin-left:1rem;
-      margin-right: 1rem;
-    }
-
- 
-    .gh_linkedin_icons {
-      /* margin: 0rem 3rem;
-      display:flex;
-      padding: 0rem 2rem!important; */
-    }
-
-    .card-body.px-5 {
-      padding: 0.2rem !important;
-    }
-    /* .pt-5.mt-5 {
-      padding:1rem 0rem!important;
-  
-     } */
-    
-  }
-  .pt-5, .pb-5  {
-    padding: 1rem .5rem!important;
-
-  }
-  
-  .mt-5 {
-    margin-top:1rem!important;
-  
-   }
-  
-    
-
-
-  @media screen  and (max-width: 400px) {
-  
-  
-   
- .pt-5 {
-  padding-top:.5rem!important;
-  padding-bottom:.5rem!important;
+.pt-5.mt-5 {
+  padding:1rem 0rem!important;
 
  }
- .mt-5 {
+
+
+}
+
+@media screen  and (max-width: 770px) {
+  .linkedin_github_icon {
+
+    color: var(--bs-heading-color);
+    margin-left:1rem;
+    margin-right: 1rem;
+  }
+ 
+  .gh_linkedin_icons {
+    /* margin: 0rem 3rem;
+    display:flex;
+    padding: 0rem 2rem!important; */
+  }
+
+  .card-body.px-5 {
+    padding: 0.2rem !important;
+  }
+  /* .pt-5.mt-5 {
+    padding:1rem 0rem!important;
+
+   } */
+  
+}
+.pt-5, .pb-5  {
+  padding: 1rem .5rem!important;
+
+}
+
+.mt-5 {
   margin-top:1rem!important;
 
  }
 
-
-    
-  .px-5  {
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
-
-  }
-
-  .py-5  {
-    padding: 0.2rem!important;
-
-  }
-  .card-body {
-    margin-bottom: 0 !important;
-  }
-
   
 
-  .pt-3.text-dark.mb-1 {
-    padding-top: 1rem !important;
 
-  }
+@media screen  and (max-width: 400px) {
+
 
  
-.fs-5 {
-  font-size: 1rem!important;
+.pt-5 {
+padding-top:.5rem!important;
+padding-bottom:.5rem!important;
+
 }
-  .pt-3.px-5.text-dark.mb-4 {
-    padding-top:.5rem!important;
-    margin-bottom: 1rem!important;
-  }
+.mt-5 {
+margin-top:1rem!important;
+
+}
+
+
+  
+.px-5  {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+
+}
+
+.py-5  {
+  padding: 0.2rem!important;
+
+}
+.card-body {
+  margin-bottom: 0 !important;
+}
+
+
+
+.pt-3.text-dark.mb-1 {
+  padding-top: 1rem !important;
+
+}
+
+
+.fs-5 {
+font-size: 1rem!important;
+}
+.pt-3.px-5.text-dark.mb-4 {
+  padding-top:.5rem!important;
+  margin-bottom: 1rem!important;
+}
 }
