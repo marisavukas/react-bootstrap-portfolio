@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useRef, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import Marisa_Vukas_resume from "../Marisa_Vukas_resume.pdf";
+import MVukas_Resume from "../MVukas_Resume.pdf";
 import metronome_picture from "../metronome_picture.png";
 import poblanos_picture from "../poblanos_picture.png";
 import emailjs from "@emailjs/browser";
@@ -63,7 +63,7 @@ function WebPage() {
             </h1>
             <p class="mt-1 display-1 fs-2 text-center">Front-End Developer</p>
             <div className="d-flex flex-column justify-content-center">
-              <a href={Marisa_Vukas_resume} target="_blank" rel="noreferrer">
+              <a href={MVukas_Resume} target="_blank" rel="noreferrer">
                 <Button size="lg" variant="dark" className="h3 mb-1 mr-5">
                   View Resume
                 </Button>
