@@ -4,10 +4,7 @@ import React, { useRef, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import MVukas_Resume from "../MVukas_Resume.pdf";
-import metronome_picture from "../metronome_picture.png";
-import poblanos_picture from "../poblanos_picture.png";
 import emailjs from "@emailjs/browser";
-import { MdCancel, MdSafetyDivider } from "react-icons/md";
 
 import {
   Navbar,
@@ -61,7 +58,7 @@ function WebPage() {
             <h1 expand="lg" class="font-weight-light display-2 p-2">
               Marisa Vukas
             </h1>
-            <p class="mt-1 display-1 fs-2 text-center">Front-End Developer</p>
+            <p class="mt-1 display-1 fs-2 text-center">Full-Stack Developer</p>
             <div className="d-flex flex-column justify-content-center">
               <a href={MVukas_Resume} target="_blank" rel="noreferrer">
                 <Button size="lg" variant="dark" className="h3 mb-1 mr-5">
@@ -92,65 +89,61 @@ function WebPage() {
 
         <Container className="container">
           <div className="about" id="about">
-            <Row className="pt-5 mt-5 pb-5 mb-5 d-flex text-center px-5">
-              <Card class="text-dark bg-light ">
-                <div className="card-body">
-                  <h1 className="pt-3 text-dark mb-1">About</h1>
-                  <Col className="pt-1 mt-5 pb-1 mb-1 px-2 ">
-                    <Row className="pt-5 mt-2 pb-5 mb-5">
-                      <div className="text-center outline-none text-dark my-1 py-2 fs-3 line-height-2">
-                        {" "}
-                        Hi! I'm Marisa. I am a front-end developer from Carmel,
-                        IN. I am passionate about problem-solving and writing
-                        code that improves people's lives. In my freetime I love
-                        to play violin, compose and produce music, and enjoy
-                        anything that involves being outside. If you have any
-                        questions, feel free to reach out!
-                      </div>
-                    </Row>
+            <Card className="mb-5 p-4">
+              <Card.Body className="d-flex row justify-content-evenly text-center">
+                <h1 className="pt-3 text-dark mx-auto">About</h1>
 
-                    <div class="d-flex justify-content-center">
-                      <Button
-                        className="contact_button"
-                        size="lg"
-                        class="btn btn-secondary text-black btn-lg"
-                        variant="dark"
-                        href="#contact"
-                      >
-                        Contact
-                      </Button>
+                <Col className="pb-1 mb-1 px-2 ">
+                  <Row className="pt-5 mt-2 pb-5 mb-5">
+                    <div className="text-center outline-none text-dark my-1 py-1 fs-3">
+                      {" "}
+                      Hi! I'm Marisa. I am a full-stack developer from Carmel,
+                      IN. I am passionate about problem-solving and writing code
+                      that improves people's lives. In my freetime I love to
+                      play violin, compose and produce music, and enjoy anything
+                      that involves being outside. If you have any questions,
+                      feel free to reach out!
                     </div>
-                  </Col>
-                </div>
-              </Card>{" "}
-            </Row>
+                  </Row>
+                  <div>
+                    <Button
+                      className="secondary"
+                      size="lg"
+                      variant="dark"
+                      href="#contact"
+                    >
+                      Contact
+                    </Button>
+                  </div>
+                </Col>
+              </Card.Body>
+            </Card>{" "}
           </div>
         </Container>
 
         <Container className="container">
           <div className="projects" id="projects">
-            <div className="card-body pt-5 mt-5 pb-5 mb-5 d-flex text-center px-5">
-              <Row className="bg-white rounded outline-none text-dark pt-5 mt-2 pb-5 mb-5 row mb-5 d-flex px-5 justify-content-lg-between text-center">
-                <h1 className="pt-0  pb-3 px-5 text-dark mb-0">Projects</h1>
+            <div className="mt-5 d-flex text-center">
+              <Row className="bg-white rounded outline-none text-dark pt-2 pb-5 mb-5 d-flex justify-content-evenly text-center">
+                <h1 className="pt-0 pb-3 text-dark">Projects</h1>
                 <Col
                   xs={12}
                   sm={12}
                   md={12}
                   lg={5}
                   xl={5}
-                  className="mt-1 px-0 mb-1 d-flex shadow-sm"
+                  className="mt-1 p-3 mb-1 d-flex shadow-sm"
                 >
-                  <Card className="h-100 mb-5">
-                    <Card.Body className="d-flex flex-column card-body">
-                      <Card.Title className="align-self-start fs-2 pb-2 align-items-center mx-auto">
-                        Metronome App
-                      </Card.Title>
-                      <Card.Text className="align-self-center justify-content-center fs-4 mb-auto pb-5 card-text">
+                  <Card className="h-100 mb-5 p-4 d-flex row justify-content-evenly">
+                    <Card.Body>
+                      <Card.Title className="fs-2">Metronome App</Card.Title>
+                      <Card.Text className="fs-4 pb-5">
                         A fully responsive metronome app made from scratch using
                         React and Node.js.
                       </Card.Text>
-                      <div className="align-self-end justify-content-center mx-auto pt-5">
+                      <div>
                         <Button
+                          size="md"
                           variant="dark"
                           href="https://github.com/marisavukas/metronome"
                           target="_blank"
@@ -160,7 +153,6 @@ function WebPage() {
                           View Code
                         </Button>{" "}
                         <Button
-                          className="mx-3"
                           variant="dark"
                           href="https://metronome-1.herokuapp.com/"
                           target="_blank"
@@ -173,13 +165,6 @@ function WebPage() {
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col
-                  xs={12}
-                  md={12}
-                  lg={5}
-                  xl={5}
-                  className="my-2 d-lg-none d-md-none d-xl-none "
-                ></Col>
 
                 <Col
                   xs={12}
@@ -187,28 +172,18 @@ function WebPage() {
                   md={12}
                   lg={5}
                   xl={5}
-                  className="mt-1 px-0 mb-1 d-flex justify-content-center shadow-sm"
+                  className="mt-1 p-3 mb-1 d-flex shadow-sm"
                 >
-                  <Card className="h-100">
-                    <a
-                      href="https://poblanos.herokuapp.com/"
-                      target="_blank"
-                      className="d-none w-50 h-50 m-auto py-3 d-flex justify-content-center"
-                    >
-                      {/* <Card.Img
-                      variant="top"
-                      src={poblanos_picture}
-                    /> */}
-                    </a>
-                    <Card.Body className="d-flex flex-column card-body">
-                      <Card.Title className="align-self-start fs-2 pb-2 align-items-center mx-auto">
+                  <Card className="h-100 mb-5 p-4 d-flex row justify-content-evenly">
+                    <Card.Body className="d-flex row justify-content-evenly">
+                      <Card.Title className="fs-2">
                         Poblano's Grill App
                       </Card.Title>
-                      <Card.Text className="align-self-center justify-content-center fs-4 mb-auto pb-5 card-text">
-                        A fully responsive restaurant app made without a
-                        template using React and Node.js.
+                      <Card.Text className="fs-4 pb-5 card-text">
+                        A fully responsive restaurant app using React and
+                        Node.js.
                       </Card.Text>
-                      <div className="align-self-end justify-content-center mx-auto pt-5">
+                      <div>
                         <Button
                           variant="dark"
                           href="https://github.com/marisavukas/poblanos"
@@ -239,10 +214,10 @@ function WebPage() {
 
         <Container className="container">
           <div className="contact" id="contact">
-            <div className="w-100 m-auto px-0 pt-5 mt-5">
-              <Row className=" bg-light mx-0 px-0 rounded outline-none text-dark pb-5 mb-5 d-flex justify-content-sm-center justify-content-xs-center justify-content-lg-center justify-content-md-center text-left">
+            <div className="w-100 px-0 pt-5 my-5">
+              <Row className="pt-5 mt-2 pb-5 mb-5">
                 <Card class="w-100 rounded mx-0 text-dark bg-light ">
-                  <div class="card-body w-auto mx-4 text-dark my-1 px-5">
+                  <div class="w-auto mx-4 text-dark my-1 px-5">
                     <h1 className="pt-5 text-center mx-0 fs-1 w-auto">
                       <strong>Contact</strong>
                     </h1>
@@ -259,7 +234,6 @@ function WebPage() {
                             >
                               <Alert.Heading variant="w-100 h5 mx-0 m-auto text-center">
                                 Your message has been sent
-                                {/* <MdCancel className="dark w-auto ml-4 px-4" /> */}
                               </Alert.Heading>
                             </Alert>
                           )}
@@ -329,7 +303,7 @@ function WebPage() {
       <footer class="py-1  px-4 mt-5 bg-dark">
         <Container className="footer">
           <p class="text-center text-light">
-            Copyright &copy; Marisa Vukas 2022
+            Copyright &copy; Marisa Vukas 2023
           </p>
         </Container>
       </footer>
