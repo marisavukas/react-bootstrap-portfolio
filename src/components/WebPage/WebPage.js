@@ -1,7 +1,6 @@
 import "./WebPage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useRef, useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import MVukas_Resume from "../MVukas_Resume.pdf";
 import emailjs from "@emailjs/browser";
@@ -9,15 +8,11 @@ import emailjs from "@emailjs/browser";
 import {
   Navbar,
   Container,
-  Nav,
-  Image,
-  spacer,
   Row,
   Col,
   Button,
   Card,
   Alert,
-  Modal,
 } from "react-bootstrap";
 
 function WebPage() {
@@ -28,27 +23,6 @@ function WebPage() {
     setShow(true);
   };
   const handleClose = () => setShow(false);
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_15gc53w",
-        "template_ofcsk7b",
-        form.current,
-        "uT2rscTncWbI3b1S9"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
 
   return (
     <div className="App">
@@ -207,94 +181,6 @@ function WebPage() {
                     </Card.Body>
                   </Card>
                 </Col>
-              </Row>
-            </div>
-          </div>
-        </Container>
-
-        <Container className="container">
-          <div className="contact" id="contact">
-            <div className="w-100 px-0 pt-5 my-5">
-              <Row className="pt-5 mt-2 pb-5 mb-5">
-                <Card class="w-100 rounded mx-0 text-dark bg-light ">
-                  <div class="w-auto mx-4 text-dark my-1 px-5">
-                    <h1 className="pt-5 text-center mx-0 fs-1 w-auto">
-                      <strong>Contact</strong>
-                    </h1>
-                    <div className="px-0 outline-none w-auto m-auto">
-                      <div className="row px-0">
-                        <div className="text-center">
-                          {show && (
-                            <Alert
-                              variant="secondary"
-                              className="text-dark"
-                              data-dismiss="alert"
-                              onClick={handleClose}
-                              aria-label="Close"
-                            >
-                              <Alert.Heading variant="w-100 h5 mx-0 m-auto text-center">
-                                Your message has been sent
-                              </Alert.Heading>
-                            </Alert>
-                          )}
-                        </div>
-
-                        <form
-                          ref={form}
-                          onSubmit={sendEmail}
-                          isSubmitted={true}
-                          variant="light"
-                          className="rounded p-0"
-                        >
-                          <div className="form-group">
-                            <label className="mb-1 fs-4 mx-0 ">Name</label>
-                            <input
-                              name="name"
-                              type="text"
-                              variant="light"
-                              className="form-control mb-4 text-dark fs-5"
-                              placeholder="Enter Name"
-                            />
-                          </div>
-                          <div className="form-group">
-                            <label className="mb-1 fs-4">Email Address</label>
-                            <input
-                              name="email"
-                              type="text"
-                              variant="light"
-                              className="form-control mb-4 bg-white text-dark fs-5"
-                              placeholder="Enter a valid email address"
-                            />
-                          </div>
-                          <div className="form-group">
-                            <label className="mb-1 fs-4">Message</label>
-                            <textarea
-                              name="message"
-                              rows="6"
-                              variant="light"
-                              className="form-control bg-white text-dark fs-5"
-                              placeholder="Type your message..."
-                            />
-                          </div>
-                          <div className="form-group py-2">
-                            <Button
-                              type="submit"
-                              variant="dark"
-                              value="Send"
-                              onClick={handleShow}
-                              className="fs-4 mb-1 mt-2"
-                            >
-                              Send Message
-                            </Button>
-
-                            <div></div>
-                          </div>
-                        </form>
-                        {/* <div className="column md"></div> */}
-                      </div>
-                    </div>
-                  </div>
-                </Card>
               </Row>
             </div>
           </div>

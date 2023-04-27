@@ -32,7 +32,6 @@ const NavigationBar = () => {
         outline="light"
         expand="lg"
         expanded={expanded}
-        // className="py-4 m-auto"
       >
         <Container className=" d-flex flex-row justify-content-start align-items-start w-100 p-0 px-5 mx-0 h-100">
           <Navbar.Toggle
