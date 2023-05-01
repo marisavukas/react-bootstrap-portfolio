@@ -2,88 +2,21 @@ html {
   scroll-behavior: smooth;
 }
 
-.App-header {
-  position: fixed;
-  z-index: 100;
-  margin-top:0;
-  width: 100%;
-  padding-top: 0;
+
+
+
+
+
+
+
+
+.terminal-card {
+  height:300px;
+
+  
 }
 
 
-
-
-
-
-.fs-1 .mb-5 {
-
-  color: var(--bs-heading-color);
-}
-
-.linkedin_github_icon {
-  color: var(--bs-heading-color);
-
-}
-
-
-
-
-
-
-
-
-
-.App {
-  background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg");
-  background-repeat: repeat;
-  background-size: cover;
-  background-color: rgba(108, 90, 116, 0.962);
-  background-position: center center;
-  background-blend-mode:luminosity;
-  min-height: 10vh;
-  margin-bottom: 0;
-  height: auto;
-  margin:0;
-  padding:0;
-  width:auto  
-}
-
-
-
-#basic-navbar-nav {
-  font-size: 1.3rem;
-}
-
-
-
-
-.homepage_container{
-  display: flex;
-  padding-top: 20vh;
-  flex-direction: column; 
-  justify-content: center;
-  text-align: center;
-}
-
-.linkedin_github_icon {
-  font-size: 3rem;
- }
-
-
- .linkedin_github_icon:hover {
-  color: #fff;
-
-}
-
-
-
-.about, .projects, .contact {
-  display:flex;
-  margin:auto;
-  align-items:center;
-  justify-content: center;
-  height:100vh;
-}
 
 
 
@@ -97,11 +30,6 @@ html {
 }
 
 @media screen  and (max-width: 770px) {
-  .linkedin_github_icon {
 
-    color: var(--bs-heading-color);
-    margin-left:1rem;
-    margin-right: 1rem;
-  }
 }
 

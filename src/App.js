@@ -1,20 +1,23 @@
+import "./components/WebPage/WebPage.css";
+import "terminal.css";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { NavigationBar, WebPage } from "./components";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./Layout";
+import { WebPage, AboutMe, Projects } from "./components";
 
 function App() {
   return (
-    <div className="app">
-      <BrowserRouter>
-        <NavigationBar />
-        <Routes>
-          <Route exact path="/" element={<WebPage />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<WebPage />} />
+          <Route path="about-me" element={<AboutMe />} />
+          <Route path="projects" element={<Projects />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

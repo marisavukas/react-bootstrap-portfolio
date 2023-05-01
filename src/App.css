@@ -1,19 +1,15 @@
+
 html {
   scroll-behavior: smooth;
 }
 
-.App-header {
-position: fixed;
-z-index: 100;
-margin-top:0;
-width: 100%;
-padding-top: 0;
 
+
+p {
+  line-height: var(--global-line-height);
 }
 
-.app {
-  height:100%;
-}
+
 .mt-4 {
   font-size: 1.5rem;
 }
@@ -25,71 +21,74 @@ padding-top: 0;
 }
 
 
-.container-fluid {
-  width:100%;
+
+header {
+  margin:auto;
 }
 
-.home_page {
-  width: auto;
-  background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-color: rgb(153, 152, 176); */
-  background-color:rgba(108, 90, 116, 0.962);
 
-  background-position: center center;
-  background-blend-mode:luminosity;
-  min-height: 10vh;
-  height: 100vh;
-  margin:0;
-  padding:0;
+p {
+  font-family:'Verdana',"sans-serif"
+}
+
+nav {
+  font-size: 1.1rem;
 }
 
 
 
+.terminal-card {
+  border: 1px solid var(--navbar-color);
+  
 
-  .pt-5.mt-5.pb-5.mb-5 {
-    display: flex;
-    justify-content: center;
-  }
-
-
-
-footer {
- margin-bottom: 0;
- padding-bottom: 0;
- position: sticky;
- 
 }
-/* .btn.btn-secondary.btn-lg {
-  display: inline-block;
-  justify-content: center;
-} */
-
-
-
-#basic-navbar-nav {
-  font-size: 1.3rem;
+.terminal-card>header {
+background-color: var(--navbar-color);
 }
 
-
-
-
-
-.homepage_container{
-  display: flex;
-  padding-top: 20vh;
-  flex-direction: column; 
-  justify-content: center;
-  text-align: center;
+:root {
+  --global-line-height: 1.2;
+  --letter-spacing: .1rem;
+  
+  --hover-color: transparent;
+        --global-font-size: 15px;
+        --global-line-height: 1.4em;
+        --global-space: 10px;
+        --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+          serif;
+        --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+          serif;
+        --background-color:#2e2b55;
+        --page-width: 60em;
+        --font-color: #f7f7f8;
+        --white-hover-color: #fdf6e3;
+        --invert-font-color: #2e2b55;
+        --secondary-color: #a5fe90;
+        --tertiary-color: #a3abba;
+        --primary-color: #f993fe;
+        --error-color: #a5fe90;
+        --navbar-color: #a599e9;
+        --progress-bar-background: #3f3f44;
+        --progress-bar-fill: #62c4ff;
+        --code-bg-color: #3f3f44;
+        --input-style: solid;
+        --display-h1-decoration: none;
+   
 }
+  
 
-.col-sm-5 {
-  padding-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -106,9 +105,6 @@ footer {
 }
 
 @media screen  and (max-width: 770px) {
-  /* .mt-5 {
-    margin-top: (spacer * .25);
-  } */
 
   
 }
