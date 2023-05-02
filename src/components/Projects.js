@@ -123,9 +123,8 @@ const Projects = () => {
               This website is another one of my projects using React! I
               initially chose to use BootStrap. Over time, I decided to remove
               the framework from this project and use something more
-              lightweight. I decided to revamp this site, using
-              React-Flexbox-Grid and a cool CSS library,{" "}
-              <a href="https://terminalcss.xyz/">Terminal.css.</a>{" "}
+              lightweight. I decided to instead use React-Flexbox-Grid and a CSS
+              library, <a href="https://terminalcss.xyz/">Terminal.css.</a>{" "}
             </ProjectBody>
             <Row center="xs">
               <Col>
