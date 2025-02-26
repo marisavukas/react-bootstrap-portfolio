@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Col } from "react-grid-sytem";
+import { Col } from "react-grid-system";
 import ProfilePic from "./ProfilePic.jpg";
 
 const Image = styled.img`
