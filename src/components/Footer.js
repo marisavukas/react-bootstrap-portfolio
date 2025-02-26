@@ -56,7 +56,7 @@ const Footer = () => {
           <MdOutlineEmail alt="email icon" />
         </Favicons>
       </Row>
-      <p style={{ textAlign: "center" }}>Copyright &copy; Marisa Vukas 2023</p>
+      <p style={{ textAlign: "center" }}>Copyright &copy; Marisa Vukas 2025</p>
     </Container>
   );
 };
