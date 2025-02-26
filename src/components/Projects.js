@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Row, Col } from "react-flexbox-grid";
+import { Row, Col } from "react-grid-system";
 
 const ProjectLink = styled.a`
   color: var(--secondary-color);
@@ -123,7 +123,7 @@ const Projects = () => {
               This website is another one of my projects using React! I
               initially chose to use BootStrap. Over time, I decided to remove
               the framework from this project and use something more
-              lightweight. I decided to instead use React-Flexbox-Grid and a CSS
+              lightweight. I decided to instead use React-Grid-System and a CSS
               library, <a href="https://terminalcss.xyz/">Terminal.css.</a>{" "}
             </ProjectBody>
             <Row center="xs">

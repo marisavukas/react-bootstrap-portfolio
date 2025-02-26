@@ -4,7 +4,7 @@ import React from "react";
 import MarisaVukas_Resume from "../MarisaVukas_Resume.pdf";
 
 import styled from "styled-components";
-import { Row, Col } from "react-flexbox-grid";
+import { Col } from "react-grid-system";
 
 const Header = styled.header`
   display: flex;

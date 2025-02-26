@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Row, Col } from "react-flexbox-grid";
+import { Col } from "react-grid-sytem";
 import ProfilePic from "./ProfilePic.jpg";
 
 const Image = styled.img`

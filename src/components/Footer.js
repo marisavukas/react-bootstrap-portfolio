@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { MdOutlineEmail, MdRadioButtonUnchecked } from "react-icons/md";
-import { Row, Col } from "react-flexbox-grid";
+import { Row } from "react-grid-system";
 
 const Container = styled.footer`
   position: relative;
