@@ -1,37 +1,44 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { Row, Col } from "react-grid-system";
+import { Container, Row, Col } from "react-grid-system";
 
-const Navbar = styled.nav``;
+const SiteName = styled(NavLink)`
+  text-align: left;
+`;
 
-const MyRow = styled(Row)``;
+const StyledNav = styled(NavLink)`
+  text-align: right;
+  margin-left:15px;
+
+`;
+
+const StyledContainer = styled(Container)`
+  padding: 15px 0;
+`;
+const StyledRow = styled(Row)`
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+`;
+
 const NavigationBar = () => {
   return (
     <>
-      <Navbar>
-        <Col xs={12}>
-          <Row>
-            <Col xs>
-              <NavLink exact to="/">
-                {" "}
-                Marisa Vukas
-              </NavLink>
-            </Col>
-
-            <Col xs={6} sm={6} md={4}>
-              <Row end="xs">
-                <Col xs>
-                  <NavLink to="about-me">About Me</NavLink>{" "}
-                </Col>
-                <Col xs>
-                  <NavLink to="projects">Projects</NavLink>
-                </Col>{" "}
-              </Row>
-            </Col>
-          </Row>{" "}
-        </Col>
-      </Navbar>
+      <StyledContainer fluid>
+        <Row justify="between"> 
+          <Col xs={5}>
+            <SiteName exact to="/">
+              Marisa Vukas
+            </SiteName>
+          </Col>            
+          <Col xs={7}>
+            <StyledRow justify="end">            
+              <StyledNav to="about-me">About Me</StyledNav> 
+              <StyledNav to="projects">Projects</StyledNav>
+            </StyledRow>
+          </Col>
+        </Row>
+      </StyledContainer>
     </>
   );
 };

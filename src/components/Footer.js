@@ -1,20 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
-import { MdOutlineEmail, MdRadioButtonUnchecked } from "react-icons/md";
-import { Row } from "react-grid-system";
-
-const Container = styled.footer`
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-`;
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { MdOutlineEmail } from "react-icons/md";
+import { Row, Container } from "react-grid-system";
 
 const Favicons = styled.a`
   font-size: 2rem;
-  margin: 0.5rem;
+  margin: .4rem;
   border-radius: 20%;
   &:hover {
     cursor: pointer;
@@ -34,15 +26,15 @@ const Footer = () => {
   };
 
   return (
-    <Container>
-      <Row center="xs">
+    <Container fluid>
+      <Row justify="center">
         <Favicons
-          href="https://github.com/marisavukas"
-          target="_blank"
-          rel="noreferrer"
-          variant="outline-dark"
-          size="sm"
-        >
+            href="https://github.com/marisavukas"
+            target="_blank"
+            rel="noreferrer"
+            variant="outline-dark"
+            size="sm"
+          >
           <AiFillGithub />
         </Favicons>
         <Favicons

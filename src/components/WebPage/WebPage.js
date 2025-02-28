@@ -1,10 +1,9 @@
 import "terminal.css";
 import React from "react";
-
 import MarisaVukas_Resume from "../MarisaVukas_Resume.pdf";
 
 import styled from "styled-components";
-import { Col } from "react-grid-system";
+import { Container } from "react-grid-system";
 
 const Header = styled.header`
   display: flex;
@@ -12,9 +11,8 @@ const Header = styled.header`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 3rem;
 
-  h1,
-  p,
   .btn {
     a {
       color: var(--error-color);
@@ -26,44 +24,30 @@ const Header = styled.header`
   }
 `;
 
-const ArchivesHeader = styled.span`
-  color: #fad001;
+
+const Subtitle = styled.h2`
+  font-size: 15px;
+  margin-bottom: 1rem;
+  font-weight:100;
 `;
 
+
 function WebPage() {
+  const ResumePDF = require("../MarisaVukas_Resume.pdf");
+
   return (
-    <Col xs={12}>
+    <Container fluid>
       <Header>
         <h1>Marisa Vukas</h1>
-        <p style={{ marginBottom: "1rem" }}>Full-Stack Developer</p>
+        <Subtitle>Full-Stack Developer</Subtitle>
 
         <button className="btn btn-error btn-ghost">
-          <a href={MarisaVukas_Resume} target="_blank" rel="noreferrer">
+          <a href={ResumePDF} target="_blank" rel="noopener noreferrer">
             View Resume{" "}
           </a>
         </button>
       </Header>
-      <br /> <br />
-      <br />
-      {/* TODO: add back in when you have some articles */}
-      {/* <section>
-        <nav>
-          <ul>
-            <ArchivesHeader>Articles</ArchivesHeader>
-            <br />
-            <li>
-              <a href="#">Dashboard</a>
-            </li>
-            <li>
-              <a href="#">Members</a>
-            </li>
-            <li>
-              <a href="#">Settings</a>
-            </li>
-          </ul>
-        </nav>
-      </section> */}
-    </Col>
+    </Container>
   );
 }
 

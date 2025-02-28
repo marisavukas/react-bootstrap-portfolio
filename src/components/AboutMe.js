@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Col } from "react-grid-system";
+import { Container, Row, Col } from "react-grid-system";
 import ProfilePic from "./ProfilePic.jpg";
 
 const Image = styled.img`
@@ -13,21 +13,19 @@ const AboutMe = () => {
     window.location.href = "mailto:marisavukas@gmail.com";
   };
   return (
-    <div>
-      <Col xs={12} style={{ textAlign: "left" }}>
+    <Container fluid>
+      <Col xs={12}>
         <h1>
           {" "}
           <header>About Me </header>
         </h1>
       </Col>
 
-      <Col xs={12} style={{ textAlign: "left" }}>
+      <Col xs={12}>
         <p>
           My name is Marisa Vukas. Welcome to my website! I am a full-stack
           developer from Carmel, IN. Here you will find various projects I have
-          worked on, as well as a collection of articles I have written. My
-          current role is a workflow developer at Edify, and was a software
-          engineer at a startup prior to that (see my{" "}
+          worked on. My most recent job was a full stack software developer at small fintech company called Baker Hill (see my{" "}
           <a
             href="https://www.linkedin.com/in/marisa-vukas/"
             target="_blank"
@@ -56,11 +54,6 @@ const AboutMe = () => {
         <p>
           In my free time, I love experimenting with different types of sound
           design as much as possible. But I also enjoy working on side projects.
-          Recently I've been blogging about new technologies including{" "}
-          <a href="https://openai.com/" target="_blank" rel="noreferrer">
-            openAI
-          </a>{" "}
-          and music production.{" "}
         </p>
         <br />
         <p>
@@ -70,7 +63,7 @@ const AboutMe = () => {
         </p>
         <Image src={ProfilePic} alt="Description of the image" />
       </Col>
-    </div>
+    </Container>
   );
 };
 
