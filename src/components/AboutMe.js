@@ -48,12 +48,9 @@ const AboutMe = () => {
             Ableton
           </a>
           , a popular Digital Audio Workstation (DAW), that sparked my interest
-          in the intersection of music and technology.
-        </p>
-        <br />
-        <p>
-          In my free time, I love experimenting with different types of sound
-          design as much as possible. But I also enjoy working on side projects.
+          in the intersection of music and technology. I love experimenting with different types of sound
+          design as much as possible. But I also enjoy working on {" "}
+          <a href="/projects">side projects</a>.
         </p>
         <br />
         <p>

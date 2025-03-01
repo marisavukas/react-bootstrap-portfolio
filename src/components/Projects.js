@@ -46,7 +46,13 @@ const Projects = () => {
               <ProjectHeader>Metronome</ProjectHeader>
               <ProjectBody>
                 This was my first project I made using React. I used an audio
-                framework called Tone.js. I created a sine wave tone and playing 
+                framework called {" "}
+                <a href="https://tonejs.github.io/"
+                   target="_blank"
+                   rel="noreferrer">
+                  Tone.js
+                </a>
+                . I created a sine wave tone and playing 
                 around with the oscillator was neat.
               </ProjectBody>
               <Links>
@@ -61,7 +67,7 @@ const Projects = () => {
 
                   <ProjectLink xs={6}>
                     <a 
-                    href="https://metronome-1.herokuapp.com/"
+                    href="https://metronome-app-946b9a75a40a.herokuapp.com/"
                     target="_blank"
                     rel="noreferrer">
                     View App
@@ -94,7 +100,7 @@ const Projects = () => {
                   </ProjectLink>{" "}
                   <ProjectLink>
                     <a 
-                      href="https://poblanos.herokuapp.com/"
+                      href="https://poblanos-app-2d95b27c99c8.herokuapp.com/"
                       target="_blank"
                       rel="noreferrer"
                     >
