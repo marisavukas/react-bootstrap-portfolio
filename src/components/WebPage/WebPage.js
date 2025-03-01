@@ -1,7 +1,5 @@
 import "terminal.css";
 import React from "react";
-import MarisaVukas_Resume from "../MarisaVukas_Resume.pdf";
-
 import styled from "styled-components";
 import { Container } from "react-grid-system";
 
@@ -33,8 +31,6 @@ const Subtitle = styled.h2`
 
 
 function WebPage() {
-  const ResumePDF = require("../MarisaVukas_Resume.pdf");
-
   return (
     <Container fluid>
       <Header>
@@ -42,7 +38,7 @@ function WebPage() {
         <Subtitle>Full-Stack Developer</Subtitle>
 
         <button className="btn btn-error btn-ghost">
-          <a href={ResumePDF} target="_blank" rel="noopener noreferrer">
+          <a href="/MarisaVukas_Resume.pdf" target="_blank" rel="noopener noreferrer">
             View Resume{" "}
           </a>
         </button>

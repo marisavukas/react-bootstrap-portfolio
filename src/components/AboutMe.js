@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { Container, Row, Col } from "react-grid-system";
-import ProfilePic from "./ProfilePic.jpg";
+import { Container, Col } from "react-grid-system";
 
 const Image = styled.img`
   width: 250px;
@@ -58,7 +57,7 @@ const AboutMe = () => {
           contact me! My email is{" "}
           <a onClick={handleClick}>marisavukas@gmail.com</a>.
         </p>
-        <Image src={ProfilePic} alt="Description of the image" />
+        <Image src="/MV_Profile.webp" alt="Description of the image" />
       </Col>
     </Container>
   );
