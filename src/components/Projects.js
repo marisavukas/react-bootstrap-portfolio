@@ -52,8 +52,8 @@ const Projects = () => {
                    rel="noreferrer">
                   Tone.js
                 </a>
-                . I created a sine wave tone and playing 
-                around with the oscillator was neat.
+                . I created a sine wave tone and had fun experimenting with the
+                oscillator.
               </ProjectBody>
               <Links>
                   <ProjectLink xs={6}>
@@ -97,8 +97,8 @@ const Projects = () => {
                     >
                     View Code
                     </a>
-                  </ProjectLink>{" "}
-                  <ProjectLink>
+                  </ProjectLink>
+                  <ProjectLink xs={6}>
                     <a 
                       href="https://poblanos-app-2d95b27c99c8.herokuapp.com/"
                       target="_blank"
@@ -116,11 +116,13 @@ const Projects = () => {
 
               <ProjectHeader>marisavukas.com</ProjectHeader>
               <ProjectBody>
-                This website is another one of my projects using React! I
-                initially chose to use BootStrap. Over time, I decided to remove
-                the framework from this project and use something more
-                lightweight. I decided to instead use React-Grid-System and a CSS
-                library, <a href="https://terminalcss.xyz/">Terminal.css.</a>{" "}
+                This website is another one of my React projects. I originally
+                built it with Bootstrap, then swapped it out for something more
+                lightweight: React Grid System and the{" "}
+                <a href="https://terminalcss.xyz/" target="_blank" rel="noreferrer">
+                  Terminal.css
+                </a>{" "}
+                library.
               </ProjectBody>
               <Row>
                 <ProjectLink xs={12}>
