@@ -22,9 +22,12 @@ const AboutMe = () => {
 
       <Col xs={12}>
         <p>
-          My name is Marisa Vukas. Welcome to my website! I am a full-stack
-          developer from Carmel, IN. Here you will find various projects I have
-          worked on. My most recent job was a full stack software developer at small fintech company called Baker Hill (see my{" "}
+          My name is Marisa Vukas. Welcome to my website! I'm a full-stack
+          software engineer based in Chicago, IL, originally from Carmel, IN.
+          I currently work at Winthrop Capital Management, where I help build
+          cloud-based reporting and portfolio management tools with ASP.NET
+          Core and Angular. Before that, I was a full-stack developer at Baker
+          Hill, a fintech company (see my{" "}
           <a
             href="https://www.linkedin.com/in/marisa-vukas/"
             target="_blank"
@@ -32,12 +35,12 @@ const AboutMe = () => {
           >
             LinkedIn
           </a>{" "}
-          for more info). I attended Purdue University in West Lafayette,
-          Indiana, graduating in May 2020.
+          for more info). I graduated from Purdue University in West Lafayette,
+          Indiana, in May 2020.
         </p>{" "}
         <br />
         <p>
-          In my free time I love making music. I've played violin for over 12
+          In my free time I love making music. I've played violin for over 15
           years and have written my own compositions. But it was my discovery of{" "}
           <a
             href="https://www.ableton.com/en/"
@@ -47,9 +50,8 @@ const AboutMe = () => {
             Ableton
           </a>
           , a popular Digital Audio Workstation (DAW), that sparked my interest
-          in the intersection of music and technology. I love experimenting with different types of sound
-          design as much as possible. But I also enjoy working on {" "}
-          <a href="/projects">side projects</a>.
+          in the intersection of music and technology. I love experimenting with
+          sound design, and I also enjoy working on <a href="/projects">side projects</a>.
         </p>
         <br />
         <p>
