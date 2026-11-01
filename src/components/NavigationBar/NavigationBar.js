@@ -27,7 +27,7 @@ const NavigationBar = () => {
       <StyledContainer fluid>
         <Row justify="between"> 
           <Col xs={5}>
-            <SiteName exact to="/">
+            <SiteName end to="/">
               Marisa Vukas
             </SiteName>
           </Col>            

@@ -12,13 +12,7 @@ const Header = styled.header`
   padding-bottom: 3rem;
 
   .btn {
-    a {
-      color: var(--error-color);
-    }
     margin: 0 auto;
-    a:hover {
-      background-color: transparent;
-    }
   }
 `;
 
@@ -37,11 +31,14 @@ function WebPage() {
         <h1>Marisa Vukas</h1>
         <Subtitle>Full-Stack Developer</Subtitle>
 
-        <button className="btn btn-error btn-ghost">
-          <a href="/MarisaVukas_Resume.pdf" target="_blank" rel="noopener noreferrer">
-            View Resume{" "}
-          </a>
-        </button>
+        <a
+          className="btn btn-error btn-ghost"
+          href="/MarisaVukas_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Resume
+        </a>
       </Header>
     </Container>
   );

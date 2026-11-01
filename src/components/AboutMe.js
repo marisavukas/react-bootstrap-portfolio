@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Container, Col } from "react-grid-system";
+import { Link } from "react-router-dom";
 
 const Image = styled.img`
   width: 250px;
@@ -8,16 +9,10 @@ const Image = styled.img`
   margin: 2rem auto;
 `;
 const AboutMe = () => {
-  const handleClick = () => {
-    window.location.href = "mailto:marisavukas@gmail.com";
-  };
   return (
     <Container fluid>
       <Col xs={12}>
-        <h1>
-          {" "}
-          <header>About Me </header>
-        </h1>
+        <h1>About Me</h1>
       </Col>
 
       <Col xs={12}>
@@ -51,15 +46,15 @@ const AboutMe = () => {
           </a>
           , a popular Digital Audio Workstation (DAW), that sparked my interest
           in the intersection of music and technology. I love experimenting with
-          sound design, and I also enjoy working on <a href="/projects">side projects</a>.
+          sound design, and I also enjoy working on <Link to="/projects">side projects</Link>.
         </p>
         <br />
         <p>
           If you have any questions or would like to connect, feel free to
           contact me! My email is{" "}
-          <a onClick={handleClick}>marisavukas@gmail.com</a>.
+          <a href="mailto:marisavukas@gmail.com">marisavukas@gmail.com</a>.
         </p>
-        <Image src="/MV_Profile.webp" alt="Description of the image" />
+        <Image src="/MV_Profile.webp" alt="Marisa Vukas" />
       </Col>
     </Container>
   );

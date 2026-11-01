@@ -21,10 +21,6 @@ const Favicons = styled.a`
   }
 `;
 const Footer = () => {
-  const handleClick = () => {
-    window.location.href = "mailto:marisavukas@gmail.com";
-  };
-
   return (
     <Container fluid>
       <Row justify="center">
@@ -32,8 +28,7 @@ const Footer = () => {
             href="https://github.com/marisavukas"
             target="_blank"
             rel="noreferrer"
-            variant="outline-dark"
-            size="sm"
+            aria-label="GitHub"
           >
           <AiFillGithub />
         </Favicons>
@@ -41,14 +36,15 @@ const Footer = () => {
           href="https://linkedin.com/in/marisa-vukas/"
           target="_blank"
           rel="noreferrer"
+          aria-label="LinkedIn"
         >
           <AiFillLinkedin />
         </Favicons>
-        <Favicons rel="noreferrer" onClick={handleClick}>
-          <MdOutlineEmail alt="email icon" />
+        <Favicons href="mailto:marisavukas@gmail.com" aria-label="Email">
+          <MdOutlineEmail />
         </Favicons>
       </Row>
-      <p style={{ textAlign: "center" }}>Copyright &copy; Marisa Vukas 2025</p>
+      <p style={{ textAlign: "center" }}>Copyright &copy; Marisa Vukas {new Date().getFullYear()}</p>
     </Container>
   );
 };
