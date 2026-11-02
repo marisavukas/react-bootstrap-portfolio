@@ -79,40 +79,6 @@ const Projects = () => {
 
           <Col xs={12} md={6}>
             <StyledCard className="terminal-card">
-              <ProjectHeader>Restaurant App</ProjectHeader>
-  
-              <ProjectBody>
-                A fully responsive restaurant app using React and Node.js. This
-                website was my first complex React app. This project became more
-                challenging when implementing the cart within the app and deciding
-                which component to store the state without state management like
-                Redux.
-              </ProjectBody>
-              <Row>
-                  <ProjectLink xs= {6}>
-                    <a 
-                      href="https://github.com/marisavukas/poblanos"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                    View Code
-                    </a>
-                  </ProjectLink>
-                  <ProjectLink xs={6}>
-                    <a 
-                      href="https://poblanos-app-2d95b27c99c8.herokuapp.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                    View App
-                    </a>
-                  </ProjectLink>
-              </Row>
-            </StyledCard>
-          </Col>
-
-          <Col xs={12} md={6}>
-            <StyledCard className="terminal-card">
 
               <ProjectHeader>marisavukas.com</ProjectHeader>
               <ProjectBody>
