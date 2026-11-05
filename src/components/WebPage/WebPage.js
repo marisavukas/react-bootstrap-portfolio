@@ -13,6 +13,14 @@ const Header = styled.header`
 
   .btn {
     margin: 0 auto;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+
+  /* Invert the resume button's colors on hover/focus */
+  .btn.btn-error.btn-ghost:hover,
+  .btn.btn-error.btn-ghost:focus-visible {
+    background-color: var(--error-color);
+    color: var(--invert-font-color);
   }
 `;
 
