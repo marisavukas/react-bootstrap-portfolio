@@ -43,6 +43,33 @@ const Projects = () => {
         <Row>
           <Col xs={12} md={6}>
             <StyledCard className="terminal-card">
+              <ProjectHeader>Finance Tracker</ProjectHeader>
+              <ProjectBody>
+                A full-stack personal finance app built with React, Node.js/Express,
+                and PostgreSQL. It connects to bank accounts through the{" "}
+                <a href="https://plaid.com/" target="_blank" rel="noreferrer">
+                  Plaid API
+                </a>{" "}
+                to sync transactions. I implemented JWT authentication from
+                scratch, including bcrypt password hashing, auth middleware, and
+                per-user storage of Plaid access tokens.
+              </ProjectBody>
+              <Row>
+                <ProjectLink xs={12}>
+                  <a
+                    href="https://github.com/marisavukas/Finance-Tracker"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Code
+                  </a>
+                </ProjectLink>
+              </Row>
+            </StyledCard>
+          </Col>
+
+          <Col xs={12} md={6}>
+            <StyledCard className="terminal-card">
               <ProjectHeader>Metronome</ProjectHeader>
               <ProjectBody>
                 This was my first project I made using React. I used an audio
@@ -100,33 +127,6 @@ const Projects = () => {
                       View Code
                   </a>
                 </ProjectLink>{" "}
-              </Row>
-            </StyledCard>
-          </Col>
-
-          <Col xs={12} md={6}>
-            <StyledCard className="terminal-card">
-              <ProjectHeader>Finance Tracker</ProjectHeader>
-              <ProjectBody>
-                A full-stack personal finance app built with React, Node.js/Express,
-                and PostgreSQL. It connects to bank accounts through the{" "}
-                <a href="https://plaid.com/" target="_blank" rel="noreferrer">
-                  Plaid API
-                </a>{" "}
-                to sync transactions. I implemented JWT authentication from
-                scratch, including bcrypt password hashing, auth middleware, and
-                per-user storage of Plaid access tokens.
-              </ProjectBody>
-              <Row>
-                <ProjectLink xs={12}>
-                  <a
-                    href="https://github.com/marisavukas/Finance-Tracker"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    View Code
-                  </a>
-                </ProjectLink>
               </Row>
             </StyledCard>
           </Col>
