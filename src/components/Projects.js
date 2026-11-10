@@ -94,7 +94,7 @@ const Projects = () => {
 
                   <ProjectLink xs={6}>
                     <a 
-                    href="https://metronome-app-946b9a75a40a.herokuapp.com/"
+                    href="https://marisa-metronome.netlify.app/"
                     target="_blank"
                     rel="noreferrer">
                     View App
